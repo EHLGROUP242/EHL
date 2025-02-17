@@ -93,6 +93,11 @@ body {
 
 .navbar-menu a:hover {
     color: var(--bleu-clair);
+    
+.navbar {
+    background-color: red !important;
+}
+
 }
 
 /* Sélecteur de langue */
