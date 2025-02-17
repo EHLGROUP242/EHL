@@ -19,11 +19,10 @@ body {
     background-color: var(--blanc);
     color: var(--bleu-secondaire);
     line-height: 1.6;
-    padding-top: 70px; /* Pour éviter que la navbar fixe cache le contenu */
 }
 
 /* Style de la barre de navigation */
-nav {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,24 +35,28 @@ nav {
     z-index: 1000;
 }
 
-/* Style du logo */
-nav .logo {
+.navbar-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
     height: 50px;
 }
 
-/* Style du menu */
-nav ul {
+.navbar-menu {
     list-style: none;
     display: flex;
     gap: 20px;
     align-items: center;
+    margin: auto;
 }
 
-nav ul li {
+.navbar-menu li {
     display: inline;
 }
 
-nav ul li a {
+.navbar-menu a {
     text-decoration: none;
     color: var(--blanc);
     font-size: 16px;
@@ -61,31 +64,30 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
+.navbar-menu a:hover {
     color: var(--bleu-clair);
 }
 
 /* Conteneur principal */
-main {
+.container {
     width: 80%;
-    margin: auto;
+    margin: 100px auto 20px auto;
     text-align: center;
-    padding-top: 20px;
 }
 
-/* Style du bouton */
-button {
+/* Boutons */
+.button {
+    display: inline-block;
     background-color: var(--bleu-clair);
     color: var(--blanc);
     padding: 10px 20px;
-    border: none;
+    text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    cursor: pointer;
     transition: background 0.3s;
 }
 
-button:hover {
+.button:hover {
     background-color: var(--bleu-fonce);
 }
 
