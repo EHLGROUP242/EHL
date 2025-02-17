@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EHL International - Suivi de Colis</title>
+    <title>EHL International</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Barre de navigation -->
     <nav class="navbar">
         <div class="navbar-logo-container">
-            <img src="logo.png" alt="EHL International" class="navbar-logo">
+            <img src="logo.png" alt="EHL International Logo" class="navbar-logo">
         </div>
         <ul class="navbar-menu">
-            <li><a href="#">Accueil</a></li>
+            <li><a href="#home">Accueil</a></li>
             <li><a href="#tracking">Suivi</a></li>
             <li><a href="#about">À propos</a></li>
         </ul>
@@ -23,17 +21,15 @@
             <option value="en">English</option>
         </select>
     </nav>
-
-    <!-- Conteneur vidéo -->
-    <div class="video-container">
+    
+    <header class="video-container">
         <video autoplay muted loop>
-            <source src="background.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la vidéo.
+            <source src="background-video.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos.
         </video>
         <div class="video-overlay"></div>
-    </div>
-
-    <!-- Section de suivi -->
+    </header>
+    
     <div class="container">
         <section id="tracking">
             <h1 data-translate="suiviTitre">Suivi de votre colis</h1>
@@ -41,23 +37,17 @@
             <button data-translate="boutonSuivre">Suivre</button>
             <p id="tracking-result"></p>
         </section>
-    </div>
 
-    <!-- Section À propos -->
-    <div class="container">
         <section id="about">
             <h1 data-translate="aboutTitle">À propos de nous</h1>
             <p data-translate="aboutContent">Nous sommes spécialisés dans le transport de colis avec un service rapide et fiable.</p>
         </section>
     </div>
-
-    <!-- Pied de page -->
+    
     <footer class="footer">
         <p>&copy; 2025 EHL International - Tous droits réservés.</p>
     </footer>
-
-    <!-- Inclusion du fichier JavaScript -->
+    
     <script src="script.js"></script>
-
 </body>
 </html>
