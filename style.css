@@ -1,35 +1,89 @@
-nav {
+/* Définition des couleurs principales */
+:root {
+    --bleu-primaire: #0056A6;
+    --bleu-secondaire: #003366;
+    --bleu-clair: #4A90E2;
+    --bleu-fonce: #002F5E;
+    --blanc: #FFFFFF;
+}
+
+/* Réinitialisation des styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--blanc);
+    color: var(--bleu-secondaire);
+    line-height: 1.6;
+}
+
+/* Style de la barre de navigation */
+.navbar {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Aligner le contenu à gauche */
-    background-color: #f8f8f8; /* Couleur de fond de la barre */
-    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: var(--bleu-primaire);
+    padding: 15px 30px;
 }
 
-.logo {
-    height: 50px; /* Ajuste la taille du logo selon ton besoin */
-    margin-right: 20px; /* Espacement entre le logo et la navigation */
+.navbar-logo {
+    height: 50px;
 }
 
-nav ul {
+.navbar-menu {
     list-style: none;
     display: flex;
     gap: 20px;
-    margin: 0;
-    padding: 0;
 }
 
-nav ul li {
+.navbar-menu li {
     display: inline;
 }
 
-nav ul li a {
+.navbar-menu a {
     text-decoration: none;
-    color: black;
+    color: var(--blanc);
+    font-size: 16px;
     font-weight: bold;
-    padding: 10px;
+    transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #007bff;
+.navbar-menu a:hover {
+    color: var(--bleu-clair);
+}
+
+/* Conteneur principal */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Boutons */
+.button {
+    display: inline-block;
+    background-color: var(--bleu-clair);
+    color: var(--blanc);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: var(--bleu-fonce);
+}
+
+/* Pied de page */
+.footer {
+    background-color: var(--bleu-secondaire);
+    color: var(--blanc);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
 }
