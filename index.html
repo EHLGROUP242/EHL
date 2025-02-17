@@ -1,25 +1,13 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site de Transport</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 <body>
-    <h1>Bienvenue sur mon site de transport de colis !</h1>
-    <body>
-    <h1>Bienvenue sur mon site de transport de colis !</h1>
-    <p>Entrez votre numéro de suivi pour suivre votre colis :</p>
-    
-    <input type="text" id="trackingNumber" placeholder="Entrez votre numéro de suivi">
-    <button onclick="trackParcel()">Suivre</button>
+    <div class="container">
+        <h1>Suivi de colis 📦</h1>
+        <p>Entrez votre numéro de suivi :</p>
 
-    <p id="trackingResult"></p>
+        <input type="text" id="trackingNumber" placeholder="Ex: 123456">
+        <button onclick="trackParcel()">Suivre</button>
 
-    <script src="script.js"></script> <!-- 🔹 Lien vers le script -->
+        <p id="trackingResult"></p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
-    <p>Le suivi de vos colis arrivera bientôt 🚀</p>
-</body>
-</html>
