@@ -3,19 +3,19 @@ document.addEventListener("DOMContentLoaded", function () {
     function trackParcel() {
         let trackingNumber = document.getElementById("tracking-number").value;
         let result = document.getElementById("tracking-result");
-
+        
         if (trackingNumber === "") {
             result.innerHTML = "❌ Veuillez entrer un numéro de suivi.";
             result.style.color = "red";
             return;
         }
-
+        
         let fakeTracking = {
             "123456": "📦 Colis en cours de livraison.",
             "789012": "✅ Colis livré.",
             "345678": "⏳ Colis en attente d'expédition."
         };
-
+        
         if (fakeTracking.hasOwnProperty(trackingNumber)) {
             result.innerHTML = fakeTracking[trackingNumber];
             result.style.color = "green";
@@ -24,8 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
             result.style.color = "orange";
         }
     }
+    
     document.querySelector("#tracking button").addEventListener("click", trackParcel);
-
+    
     // Gestion du changement de langue
     const translations = {
         "fr": {
@@ -43,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "aboutContent": "We specialize in parcel transport with fast and reliable service. Our services also include border crossings to ensure smooth international deliveries. Additionally, we work directly with e-commerce platforms to simplify order shipping and provide an optimal experience for customers."
         }
     };
-
+    
     function changeLanguage(lang) {
         document.querySelectorAll("[data-translate]").forEach(element => {
             let key = element.getAttribute("data-translate");
@@ -56,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
-
+    
     document.getElementById("language-selector").addEventListener("change", function () {
         changeLanguage(this.value);
     });
