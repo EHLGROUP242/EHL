@@ -122,7 +122,7 @@ body {
 .container {
     width: 80%;
     margin: auto;
-    padding-top: 30px; /* Ajustement supplémentaire pour remonter la section */
+    padding-top: 0px; /* Ajustement pour remonter davantage la section */
     text-align: center;
     position: relative;
     z-index: 2;
@@ -130,7 +130,7 @@ body {
 
 /* Section de suivi */
 #tracking {
-    margin-top: 10px; /* Réduction de l'espacement pour remonter davantage */
+    margin-top: -200px; /* Réduction de l'espacement pour remonter davantage */
     padding: 30px 20px;
     text-align: center;
     position: relative;
