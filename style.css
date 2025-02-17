@@ -1,0 +1,33 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Titre principal */
+h1 {
+    color: #333;
+}
+
+/* Paragraphe */
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Bouton */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
