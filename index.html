@@ -7,26 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">
-            <img src="logo.png" alt="EHL International Logo" class="logo">
-        </a>
-        <ul>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="navbar-logo-container">
+            <a href="index.html">
+                <img src="logo.png" alt="EHL International Logo" class="navbar-logo">
+            </a>
+        </div>
+        <ul class="navbar-menu">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="about.html">À propos de nous</a></li>
             <li><a href="services.html">Nos services</a></li>
             <li><a href="contact.html">Nous contacter</a></li>
         </ul>
     </nav>
-    
-    <main>
+
+    <!-- Conteneur principal -->
+    <main class="container">
         <section id="tracking">
             <h1>Suivi de votre colis</h1>
             <input type="text" id="tracking-number" placeholder="Entrez votre numéro de suivi">
-            <button onclick="trackPackage()">Suivre</button>
+            <button class="button" onclick="trackPackage()">Suivre</button>
             <div id="tracking-result"></div>
         </section>
     </main>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <p>&copy; 2025 EHL International. Tous droits réservés.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
