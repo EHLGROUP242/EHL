@@ -33,6 +33,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
+    height: 80px; /* Ajustement pour correspondre à la taille du logo */
 }
 
 .navbar-logo-container {
@@ -41,7 +42,7 @@ body {
 }
 
 .navbar-logo {
-    height: 50px;
+    height: 70px; /* Augmentation de la taille du logo pour correspondre à la barre de navigation */
 }
 
 .navbar-menu {
