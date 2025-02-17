@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Conteneur vidéo -->
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="background-video.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Barre de navigation -->
     <nav class="navbar">
         <div class="navbar-logo-container">
             <a href="index.html">
@@ -19,13 +30,14 @@
             <li><a href="services.html">Nos services</a></li>
             <li><a href="contact.html">Nous contacter</a></li>
         </ul>
-        <select class="language-selector" id="languageSwitcher">
-            <option value="fr">Français</option>
-            <option value="en">English</option>
+        <select class="language-selector" onchange="changeLanguage(this.value)">
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
         </select>
     </nav>
 
-    <main>
+    <!-- Contenu principal -->
+    <main class="container">
         <section id="tracking">
             <h1>Suivi de votre colis</h1>
             <input type="text" id="tracking-number" placeholder="Entrez votre numéro de suivi">
