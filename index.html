@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Barre de navigation -->
     <nav class="navbar">
         <div class="navbar-logo-container">
             <a href="index.html">
@@ -21,22 +19,20 @@
             <li><a href="services.html">Nos services</a></li>
             <li><a href="contact.html">Nous contacter</a></li>
         </ul>
+        <select class="language-selector" id="languageSwitcher">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+        </select>
     </nav>
 
-    <!-- Conteneur principal -->
-    <main class="container">
+    <main>
         <section id="tracking">
             <h1>Suivi de votre colis</h1>
             <input type="text" id="tracking-number" placeholder="Entrez votre numéro de suivi">
-            <button class="button" onclick="trackPackage()">Suivre</button>
+            <button onclick="trackPackage()">Suivre</button>
             <div id="tracking-result"></div>
         </section>
     </main>
-
-    <!-- Pied de page -->
-    <footer class="footer">
-        <p>&copy; 2025 EHL International. Tous droits réservés.</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
