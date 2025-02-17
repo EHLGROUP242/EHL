@@ -75,6 +75,22 @@ body {
     outline-offset: 2px;
 }
 
+/* Sélecteur de langue */
+.language-selector {
+    background-color: var(--blanc);
+    color: var(--bleu-primaire);
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.language-selector:focus {
+    outline: 2px solid var(--bleu-clair);
+}
+
 /* Conteneur principal */
 .container {
     width: 80%;
