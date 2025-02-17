@@ -12,10 +12,10 @@
             <a href="#"><img src="logo.png" alt="EHL International" class="navbar-logo"></a>
         </div>
         <ul class="navbar-menu">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#about">À propos de nous</a></li>
-            <li><a href="#tracking">Suivi de colis</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" data-translate="accueil">Accueil</a></li>
+            <li><a href="#about" data-translate="about">À propos de nous</a></li>
+            <li><a href="#tracking" data-translate="suivi">Suivi de colis</a></li>
+            <li><a href="#contact" data-translate="contact">Contact</a></li>
         </ul>
         <select id="language-selector" class="language-selector">
             <option value="fr">FR</option>
@@ -32,15 +32,15 @@
     
     <div class="container">
         <section id="tracking" style="margin-top: -10px;">
-            <h1 id="tracking-title">Suivi de votre colis</h1>
-            <input type="text" id="tracking-number" placeholder="Entrez votre numéro de suivi">
-            <button onclick="trackParcel()">Suivre</button>
+            <h1 id="tracking-title" data-translate="suiviTitre">Suivi de votre colis</h1>
+            <input type="text" id="tracking-number" placeholder="Entrez votre numéro de suivi" data-translate="suiviPlaceholder">
+            <button onclick="trackParcel()" data-translate="boutonSuivre">Suivre</button>
             <div id="tracking-result"></div>
         </section>
         
         <section id="about">
-            <h1 id="about-title">À propos de nous</h1>
-            <p id="about-content">Nous sommes spécialisés dans le transport de colis avec un service rapide et fiable. Nos services incluent également le passage de frontières pour assurer une livraison fluide à l'international. De plus, nous travaillons directement avec les plateformes de vente en ligne pour simplifier l'expédition des commandes et garantir une expérience optimale aux clients.</p>
+            <h1 id="about-title" data-translate="aboutTitle">À propos de nous</h1>
+            <p id="about-content" data-translate="aboutContent">Nous sommes spécialisés dans le transport de colis avec un service rapide et fiable. Nos services incluent également le passage de frontières pour assurer une livraison fluide à l'international. De plus, nous travaillons directement avec les plateformes de vente en ligne pour simplifier l'expédition des commandes et garantir une expérience optimale aux clients.</p>
         </section>
     </div>
     
