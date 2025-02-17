@@ -26,4 +26,26 @@
         </div>
         <ul class="navbar-menu">
             <li><a href="index.html">Accueil</a></li>
-     
+            <li><a href="about.html">À propos de nous</a></li>
+            <li><a href="services.html">Nos services</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+        </ul>
+        <select id="languageSwitcher" class="language-selector">
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+        </select>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main class="container">
+        <section id="tracking">
+            <h1>Suivi de votre colis</h1>
+            <input type="text" id="tracking-number" placeholder="Entrez votre numéro de suivi">
+            <button onclick="trackParcel()">Suivre</button>
+            <div id="tracking-result"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
