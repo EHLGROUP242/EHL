@@ -1,63 +1,63 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Gestion du tracking
-    function trackParcel() {
-        let trackingNumber = document.getElementById("tracking-number").value;
-        let result = document.getElementById("tracking-result");
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EHL International - Suivi de Colis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-        if (trackingNumber === "") {
-            result.innerHTML = "❌ Veuillez entrer un numéro de suivi.";
-            result.style.color = "red";
-            return;
-        }
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="navbar-logo-container">
+            <img src="logo.png" alt="EHL International" class="navbar-logo">
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#tracking">Suivi</a></li>
+            <li><a href="#about">À propos</a></li>
+        </ul>
+        <select id="language-selector" class="language-selector">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+        </select>
+    </nav>
 
-        let fakeTracking = {
-            "123456": "📦 Colis en cours de livraison.",
-            "789012": "✅ Colis livré.",
-            "345678": "⏳ Colis en attente d'expédition."
-        };
+    <!-- Conteneur vidéo -->
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="background.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
 
-        if (fakeTracking.hasOwnProperty(trackingNumber)) {
-            result.innerHTML = fakeTracking[trackingNumber];
-            result.style.color = "green";
-        } else {
-            result.innerHTML = "⚠ Numéro de suivi inconnu.";
-            result.style.color = "orange";
-        }
-    }
-    document.querySelector("#tracking button").addEventListener("click", trackParcel);
+    <!-- Section de suivi -->
+    <div class="container">
+        <section id="tracking">
+            <h1 data-translate="suiviTitre">Suivi de votre colis</h1>
+            <input type="text" id="tracking-number" placeholder="Entrez votre numéro de suivi" data-translate="suiviPlaceholder">
+            <button data-translate="boutonSuivre">Suivre</button>
+            <p id="tracking-result"></p>
+        </section>
+    </div>
 
-    // Gestion du changement de langue
-    const translations = {
-        "fr": {
-            "suiviTitre": "Suivi de votre colis",
-            "suiviPlaceholder": "Entrez votre numéro de suivi",
-            "boutonSuivre": "Suivre",
-            "aboutTitle": "À propos de nous",
-            "aboutContent": "Nous sommes spécialisés dans le transport de colis avec un service rapide et fiable. Nos services incluent également le passage de frontières pour assurer une livraison fluide à l'international. De plus, nous travaillons directement avec les plateformes de vente en ligne pour simplifier l'expédition des commandes et garantir une expérience optimale aux clients."
-        },
-        "en": {
-            "suiviTitre": "Parcel Tracking",
-            "suiviPlaceholder": "Enter your tracking number",
-            "boutonSuivre": "Track",
-            "aboutTitle": "About Us",
-            "aboutContent": "We specialize in parcel transport with fast and reliable service. Our services also include border crossings to ensure smooth international deliveries. Additionally, we work directly with e-commerce platforms to simplify order shipping and provide an optimal experience for customers."
-        }
-    };
+    <!-- Section À propos -->
+    <div class="container">
+        <section id="about">
+            <h1 data-translate="aboutTitle">À propos de nous</h1>
+            <p data-translate="aboutContent">Nous sommes spécialisés dans le transport de colis avec un service rapide et fiable.</p>
+        </section>
+    </div>
 
-    function changeLanguage(lang) {
-        document.querySelectorAll("[data-translate]").forEach(element => {
-            let key = element.getAttribute("data-translate");
-            if (translations[lang][key]) {
-                if (element.tagName === "INPUT") {
-                    element.placeholder = translations[lang][key];
-                } else {
-                    element.textContent = translations[lang][key];
-                }
-            }
-        });
-    }
+    <!-- Pied de page -->
+    <footer class="footer">
+        <p>&copy; 2025 EHL International - Tous droits réservés.</p>
+    </footer>
 
-    document.getElementById("language-selector").addEventListener("change", function () {
-        changeLanguage(this.value);
-    });
-});
+    <!-- Inclusion du fichier JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
