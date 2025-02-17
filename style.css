@@ -33,7 +33,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    height: 80px; /* Ajustement pour correspondre à la taille du logo */
+    height: 90px; /* Augmentation de la hauteur de la barre de navigation */
 }
 
 .navbar-logo-container {
@@ -42,7 +42,7 @@ body {
 }
 
 .navbar-logo {
-    height: 70px; /* Augmentation de la taille du logo pour correspondre à la barre de navigation */
+    height: 80px; /* Augmentation de la taille du logo pour correspondre à la barre de navigation */
 }
 
 .navbar-menu {
@@ -72,7 +72,7 @@ body {
 /* Conteneur principal */
 .container {
     width: 80%;
-    margin: 100px auto 20px auto;
+    margin: 110px auto 20px auto; /* Ajustement pour éviter que le contenu ne soit caché sous la barre de navigation */
     text-align: center;
 }
 
