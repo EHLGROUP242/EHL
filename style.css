@@ -27,13 +27,13 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: var(--bleu-primaire);
-    padding: 09px 30px; /* Réduction de la hauteur de la barre de navigation */
+    padding: 9px 30px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    height: 70px; /* Ajustement de la hauteur pour correspondre au logo */
+    height: 60px; /* Ajustement de la hauteur pour correspondre au logo */
 }
 
 .navbar-logo-container {
@@ -42,7 +42,7 @@ body {
 }
 
 .navbar-logo {
-    height: 70px; /* Ajustement de la taille du logo pour correspondre à la barre de navigation */
+    height: 60px; /* Ajustement de la taille du logo pour correspondre à la barre de navigation */
 }
 
 .navbar-menu {
@@ -72,7 +72,7 @@ body {
 /* Conteneur principal */
 .container {
     width: 80%;
-    margin: 90px auto 20px auto; /* Ajustement pour éviter que le contenu ne soit caché sous la barre de navigation */
+    margin: 90px auto 20px auto;
     text-align: center;
 }
 
@@ -99,4 +99,29 @@ body {
     text-align: center;
     padding: 15px 0;
     margin-top: 40px;
+}
+
+/* Réactivité et compatibilité mobile */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .navbar-logo {
+        height: 50px;
+    }
+    
+    .navbar-menu {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .container {
+        width: 90%;
+        margin: 100px auto 20px auto;
+    }
 }
