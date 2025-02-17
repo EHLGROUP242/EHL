@@ -29,21 +29,32 @@ document.addEventListener("DOMContentLoaded", function () {
     // Gestion du changement de langue
     const translations = {
         "fr": {
-            "trackingTitle": "Suivi de colis",
+            "suiviTitre": "Suivi de votre colis",
+            "suiviPlaceholder": "Entrez votre numéro de suivi",
+            "boutonSuivre": "Suivre",
             "aboutTitle": "À propos de nous",
             "aboutContent": "Nous sommes spécialisés dans le transport de colis avec un service rapide et fiable. Nos services incluent également le passage de frontières pour assurer une livraison fluide à l'international. De plus, nous travaillons directement avec les plateformes de vente en ligne pour simplifier l'expédition des commandes et garantir une expérience optimale aux clients."
         },
         "en": {
-            "trackingTitle": "Parcel Tracking",
+            "suiviTitre": "Parcel Tracking",
+            "suiviPlaceholder": "Enter your tracking number",
+            "boutonSuivre": "Track",
             "aboutTitle": "About Us",
             "aboutContent": "We specialize in parcel transport with fast and reliable service. Our services also include border crossings to ensure smooth international deliveries. Additionally, we work directly with e-commerce platforms to simplify order shipping and provide an optimal experience for customers."
         }
     };
 
     function changeLanguage(lang) {
-        document.getElementById("tracking-title").textContent = translations[lang]["trackingTitle"];
-        document.getElementById("about-title").textContent = translations[lang]["aboutTitle"];
-        document.getElementById("about-content").textContent = translations[lang]["aboutContent"];
+        document.querySelectorAll("[data-translate]").forEach(element => {
+            let key = element.getAttribute("data-translate");
+            if (translations[lang][key]) {
+                if (element.tagName === "INPUT") {
+                    element.placeholder = translations[lang][key];
+                } else {
+                    element.textContent = translations[lang][key];
+                }
+            }
+        });
     }
 
     document.getElementById("language-selector").addEventListener("change", function () {
