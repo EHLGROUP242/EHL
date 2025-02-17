@@ -130,7 +130,7 @@ body {
 
 /* Section de suivi */
 #tracking {
-    margin-top: -200px; /* Réduction de l'espacement pour remonter davantage */
+    margin-top: -100px; /* Réduction de l'espacement pour remonter davantage */
     padding: 30px 20px;
     text-align: center;
     position: relative;
