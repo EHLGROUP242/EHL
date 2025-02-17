@@ -27,13 +27,13 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: var(--bleu-primaire);
-    padding: 15px 30px;
+    padding: 10px 30px; /* Réduction de la hauteur de la barre de navigation */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    height: 90px; /* Augmentation de la hauteur de la barre de navigation */
+    height: 70px; /* Ajustement de la hauteur pour correspondre au logo */
 }
 
 .navbar-logo-container {
@@ -42,7 +42,7 @@ body {
 }
 
 .navbar-logo {
-    height: 80px; /* Augmentation de la taille du logo pour correspondre à la barre de navigation */
+    height: 70px; /* Ajustement de la taille du logo pour correspondre à la barre de navigation */
 }
 
 .navbar-menu {
@@ -72,7 +72,7 @@ body {
 /* Conteneur principal */
 .container {
     width: 80%;
-    margin: 110px auto 20px auto; /* Ajustement pour éviter que le contenu ne soit caché sous la barre de navigation */
+    margin: 90px auto 20px auto; /* Ajustement pour éviter que le contenu ne soit caché sous la barre de navigation */
     text-align: center;
 }
 
