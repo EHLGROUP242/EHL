@@ -27,7 +27,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: var(--bleu-primaire);
-    padding: 10px 30px; /* Réduction de la hauteur de la barre de navigation */
+    padding: 09px 30px; /* Réduction de la hauteur de la barre de navigation */
     position: fixed;
     top: 0;
     left: 0;
