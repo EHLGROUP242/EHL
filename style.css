@@ -25,7 +25,7 @@ body {
 .video-container {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 60vh; /* Réduction de la hauteur de la vidéo */
     overflow: hidden;
 }
 
@@ -122,7 +122,7 @@ body {
 .container {
     width: 80%;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 80px; /* Ajustement pour monter la section */
     text-align: center;
     position: relative;
     z-index: 2;
@@ -130,8 +130,8 @@ body {
 
 /* Section de suivi */
 #tracking {
-    margin-top: 80px;
-    padding: 40px 20px;
+    margin-top: 40px; /* Réduction de l'espacement */
+    padding: 30px 20px;
     text-align: center;
     position: relative;
     z-index: 3;
@@ -209,7 +209,7 @@ body {
     
     .container {
         width: 90%;
-        padding-top: 120px;
+        padding-top: 100px;
     }
 
     #tracking {
