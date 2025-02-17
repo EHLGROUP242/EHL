@@ -3,49 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EHL International - Suivi de Colis</title>
-    <link rel="stylesheet" href="style.css">
+    <title>EHL International</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Conteneur vidéo -->
-    <div class="video-container">
-        <video autoplay muted loop>
-            <source src="background-video.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la lecture de vidéos.
-        </video>
-        <div class="video-overlay"></div>
-    </div>
-
-    <!-- Barre de navigation -->
     <nav class="navbar">
         <div class="navbar-logo-container">
-            <a href="index.html">
-                <img src="logo.png" alt="EHL International Logo" class="navbar-logo">
-            </a>
+            <img src="logo.png" alt="EHL International" class="navbar-logo">
         </div>
         <ul class="navbar-menu">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="about.html">À propos de nous</a></li>
-            <li><a href="services.html">Nos services</a></li>
-            <li><a href="contact.html">Nous contacter</a></li>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#about">À propos de nous</a></li>
+            <li><a href="#tracking">Suivi de colis</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <select id="languageSwitcher" class="language-selector">
+        <select id="language-selector" class="language-selector">
             <option value="fr">FR</option>
             <option value="en">EN</option>
         </select>
     </nav>
-
-    <!-- Contenu principal -->
-    <main class="container">
+    
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+    
+    <div class="container">
         <section id="tracking">
-            <h1>Suivi de votre colis</h1>
+            <h1 id="tracking-title">Suivi de votre colis</h1>
             <input type="text" id="tracking-number" placeholder="Entrez votre numéro de suivi">
             <button onclick="trackParcel()">Suivre</button>
             <div id="tracking-result"></div>
         </section>
-    </main>
-
+        
+        <section id="about">
+            <h1 id="about-title">À propos de nous</h1>
+            <p id="about-content">Nous sommes spécialisés dans le transport de colis avec un service rapide et fiable. Nos services incluent également le passage de frontières pour assurer une livraison fluide à l'international. De plus, nous travaillons directement avec les plateformes de vente en ligne pour simplifier l'expédition des commandes et garantir une expérience optimale aux clients.</p>
+        </section>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
