@@ -50,6 +50,10 @@ body {
 
 /* Style de la barre de navigation */
 .navbar {
+    .navbar {
+    background-color: red !important;
+}
+
     display: flex;
     align-items: center;
     justify-content: space-between;
