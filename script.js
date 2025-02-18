@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     function updateLanguage(lang) {
+        console.log("Langue appliquée:", lang);
         document.querySelectorAll("[data-translate]").forEach(element => {
             const key = element.getAttribute("data-translate");
             if (translations[lang][key]) {
