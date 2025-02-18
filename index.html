@@ -3,41 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EHL International - Suivi de colis</title>
+    <title>EHL International</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="navbar-logo-container">
-                <a href="index.html"><img src="logo.png" alt="EHL International Logo" class="navbar-logo"></a>
-            </div>
-            <ul class="navbar-menu">
-                <li><a href="#tracking" data-translate="suiviTitre">Suivi de colis</a></li>
-                <li><a href="#about" data-translate="aboutTitle">À propos de nous</a></li>
-            </ul>
-            <select id="language-selector" class="language-selector">
-                <option value="fr">FR</option>
-                <option value="en">EN</option>
-            </select>
-        </nav>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="navbar-logo-container">
+            <img src="logo.png" alt="EHL International Logo" class="navbar-logo">
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#tracking">Suivi</a></li>
+            <li><a href="#about">À propos</a></li>
+        </ul>
+        <select id="language-selector" class="language-selector">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+        </select>
+    </nav>
+    
+    <!-- Conteneur vidéo -->
+    <header class="video-container">
+        <video autoplay muted loop>
+            <source src="background-video.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+        <div class="video-overlay"></div>
     </header>
     
-    <section class="container">
-        <div id="tracking">
-            <h1 id="tracking-title" data-translate="suiviTitre">Suivi de votre colis</h1>
+    <!-- Conteneur principal -->
+    <div class="container">
+        
+        <!-- Section Suivi -->
+        <section id="tracking" class="tracking-container">
+            <h1 data-translate="suiviTitre">Suivi de votre colis</h1>
             <input type="text" id="tracking-number" placeholder="Entrez votre numéro de suivi" data-translate="suiviPlaceholder">
             <button data-translate="boutonSuivre">Suivre</button>
             <p id="tracking-result"></p>
-        </div>
-    </section>
+        </section>
 
-    <section class="container" id="about">
-        <h2 id="about-title" data-translate="aboutTitle">À propos de nous</h2>
-        <p id="about-content" data-translate="aboutContent">
-            Nous sommes spécialisés dans le transport de colis avec un service rapide et fiable. Nos services incluent également le passage de frontières pour assurer une livraison fluide à l'international. De plus, nous travaillons directement avec les plateformes de vente en ligne pour simplifier l'expédition des commandes et garantir une expérience optimale aux clients.
-        </p>
-    </section>
+        <!-- Section À propos -->
+        <section id="about" class="about-container">
+            <h1 data-translate="aboutTitle">À propos de nous</h1>
+            <p>Chez EHL International, nous nous engageons à offrir des services de transport de colis rapides, fiables et sécurisés à travers le monde. Fondée sur des valeurs de confiance et d'efficacité, notre entreprise a pour mission de simplifier l’expédition pour les particuliers et les professionnels, y compris les envois nécessitant un passage de frontières.</p>
+            <p>Grâce à notre réseau logistique performant et notre expertise en formalités douanières, nous assurons un acheminement fluide et sécurisé de vos colis, que ce soit pour une expédition nationale ou internationale. Nous prenons en charge toutes les démarches administratives nécessaires pour garantir un passage des frontières sans encombre et éviter tout retard de livraison.</p>
+            <p>Nous collaborons également directement avec les plateformes de vente en ligne pour assurer une gestion optimisée des commandes et des livraisons, garantissant ainsi une expérience fluide et efficace aux e-commerçants et à leurs clients.</p>
+            <p>🔹 Rapidité : Nous acheminons vos colis dans les meilleurs délais.</p>
+            <p>🔹 Fiabilité : Chaque étape du transport est suivie avec précision.</p>
+            <p>🔹 Expertise douanière : Nous facilitons le passage des frontières pour éviter les blocages.</p>
+            <p>🔹 E-commerce : Intégration avec les plateformes de vente en ligne pour un traitement efficace des commandes.</p>
+            <p>🔹 Service client : Une équipe dédiée est à votre écoute pour vous accompagner.</p>
+            <p>Avec EHL International, vos colis voyagent en toute sécurité, partout dans le monde !</p>
+        </section>
+    </div>
+    
+    <!-- Pied de page -->
+    <footer class="footer">
+        <p>&copy; 2025 EHL International - Tous droits réservés.</p>
+    </footer>
     
     <script src="script.js"></script>
 </body>
