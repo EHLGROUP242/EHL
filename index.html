@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Barre de navigation -->
     <nav class="navbar">
         <div class="navbar-logo-container">
             <img src="logo.png" alt="EHL International Logo" class="navbar-logo">
@@ -22,6 +23,7 @@
         </select>
     </nav>
     
+    <!-- Conteneur vidéo -->
     <header class="video-container">
         <video autoplay muted loop>
             <source src="background-video.mp4" type="video/mp4">
@@ -30,20 +32,25 @@
         <div class="video-overlay"></div>
     </header>
     
+    <!-- Conteneur principal -->
     <div class="container">
-        <section id="tracking" class="tracking-section">
+        
+        <!-- Section Suivi -->
+        <section id="tracking">
             <h1 data-translate="suiviTitre">Suivi de votre colis</h1>
             <input type="text" id="tracking-number" placeholder="Entrez votre numéro de suivi" data-translate="suiviPlaceholder">
             <button data-translate="boutonSuivre">Suivre</button>
             <p id="tracking-result"></p>
         </section>
-    </div>
 
-    <section id="about">
-        <h1 data-translate="aboutTitle">À propos de nous</h1>
-        <p data-translate="aboutContent">Nous sommes spécialisés dans le transport de colis avec un service rapide et fiable.</p>
-    </section>
+        <!-- Section À propos -->
+        <section id="about">
+            <h1 data-translate="aboutTitle">À propos de nous</h1>
+            <p data-translate="aboutContent">Nous sommes spécialisés dans le transport de colis avec un service rapide et fiable.</p>
+        </section>
+    </div>
     
+    <!-- Pied de page -->
     <footer class="footer">
         <p>&copy; 2025 EHL International - Tous droits réservés.</p>
     </footer>
