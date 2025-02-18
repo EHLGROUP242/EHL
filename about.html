@@ -3,17 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À propos - Transport de colis</title>
+    <title>À propos - EHL International</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="about-container">
-        <h1>À propos de nous 🚚</h1>
-        <p>Bienvenue sur notre site de transport de colis. Nous nous engageons à livrer vos colis rapidement et en toute sécurité.</p>
-        <p>Notre entreprise travaille avec plusieurs partenaires pour assurer un suivi fiable et transparent de vos envois.</p>
-        <p>Nous mettons l'accent sur la satisfaction client et la rapidité des livraisons.</p>
-        <a href="index.html"><button>Retour à l'accueil</button></a>
-    </div>
-</body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="navbar-logo-container">
+            <img src="logo.png" alt="EHL International Logo" class="navbar-logo">
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#tracking">Suivi</a></li>
+            <li><a href="about.html">À propos</a></li>
+        </ul>
+        <select id="language-selector" class="language-selector">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+        </select>
+    </nav>
 
+    <!-- Conteneur principal -->
+    <div class="container">
+        <!-- Section À propos -->
+        <section id="about">
+            <h1>À propos de nous</h1>
+            <p>
+                Chez <strong>EHL International</strong>, nous nous engageons à offrir des services de transport de colis rapides, fiables et sécurisés à travers le monde. Fondée sur des valeurs de confiance et d'efficacité, notre entreprise a pour mission de simplifier l’expédition pour les particuliers et les professionnels, y compris les envois nécessitant un passage de frontières.
+            </p>
+            <p>
+                Grâce à notre réseau logistique performant et notre expertise en formalités douanières, nous assurons un acheminement fluide et sécurisé de vos colis, que ce soit pour une expédition nationale ou internationale. Nous prenons en charge toutes les démarches administratives nécessaires pour garantir un passage des frontières sans encombre et éviter tout retard de livraison.
+            </p>
+            <p>
+                Nous collaborons également directement avec les plateformes de vente en ligne pour assurer une gestion optimisée des commandes et des livraisons, garantissant ainsi une expérience fluide et efficace aux e-commerçants et à leurs clients.
+            </p>
+            <p>
+                🔹 <strong>Rapidité :</strong> Nous acheminons vos colis dans les meilleurs délais. <br>
+                🔹 <strong>Fiabilité :</strong> Chaque étape du transport est suivie avec précision. <br>
+                🔹 <strong>Expertise douanière :</strong> Nous facilitons le passage des frontières pour éviter les blocages. <br>
+                🔹 <strong>E-commerce :</strong> Intégration avec les plateformes de vente en ligne pour un traitement efficace des commandes. <br>
+                🔹 <strong>Service client :</strong> Une équipe dédiée est à votre écoute pour vous accompagner.
+            </p>
+            <p>
+                Avec <strong>EHL International</strong>, vos colis voyagent en toute sécurité, partout dans le monde !
+            </p>
+        </section>
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <p>&copy; 2025 EHL International - Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
